@@ -1,13 +1,73 @@
 /* Font One */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 /* Font Two */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+/* Font One */
+#font-one {
+    font-family: Outfit;
+    font-size: 16px;
+}
+/* Font Two */
+#font-two {
+    font-family: Commissioner;
+}
 
 /* --- */
 
-:root {
-
+body {
+    margin: 0;
+    padding: 2ch 0;
 }
 
-body {
-    /* font-family: var(--font-one); */
+#app {
+    /* width: 550px; */
+    width: 68ch;
+    margin: 0 auto
+}
+
+label {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 0.5rem;
+    text-align: center;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.control-displays {
+    margin: 0;
+    padding: 0;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+#custom-input {
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#displays, #controls {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2ch;
+}
+
+#displays {
+    height: 20rem;
+    overflow: hidden;
+}
+
+#controls {
+    
 }

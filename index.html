@@ -10,9 +10,81 @@
         <!-- DEV: REMOVE --><script type="text/javascript" src="https://livejs.com/live.js"></script>
     </head>
     <body>
-        <p id="font-one"></p>
-        <p id="font-two"></p>
+        <div id="app">
+
+            <div id="controls">
+                <form id="font-one">
+                    <label>
+                        Weight
+                        <input type="range" id="font-one-weight" value="400" min="100" max="900" step="100">
+                        <p id="font-one-weight-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Size
+                        <input type="range" id="font-one-size" value="1" min="0.5" max="3" step="0.01">
+                        <p id="font-one-size-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Line Height
+                        <input type="range" id="font-one-line-height" value="125" min="80" max="200" step="1">
+                        <p id="font-one-line-height-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Kerning
+                        <input type="range" id="font-one-kerning" value="0" min="0" max="1" step="0.01">
+                        <p id="font-one-kerning-display" class="control-displays"></p>
+                    </label>
+
+                </form>
+
+                <form id="font-two">
+                    <label>
+                        Weight
+                        <input type="range" id="font-two-weight" value="400" min="100" max="900" step="100">
+                        <p id="font-two-weight-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Size
+                        <input type="range" id="font-two-size" value="1" min="0.5" max="3" step="0.01">
+                        <p id="font-two-size-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Line Height
+                        <input type="range" id="font-two-line-height" value="125" min="80" max="200" step="1">
+                        <p id="font-two-line-height-display" class="control-displays"></p>
+                    </label>
+                    <label>
+                        Kerning
+                        <input type="range" id="font-two-kerning" value="0" min="0" max="1" step="0.01">
+                        <p id="font-two-kerning-display" class="control-displays"></p>
+                    </label>
+                </form>
+            </div>
+
+            <hr>
+
+            <div id="inputs">
+                <label>
+                    Custom Input
+                    <textarea id="custom-input"></textarea>
+                </label>
+                <label>
+                    Reset Lorem Ipsum
+                    <input type="checkbox" id="reset-default-text" checked>
+                </label>
+            </div>
+
+            <hr>
+
+            <div id="displays">
+                <p id="font-one"></p>
+                <p id="font-two"></p>
+            </div>
         
+        </div>
+
+        <script src="helperFunctions.js"></script>
+        <script src="controls.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
