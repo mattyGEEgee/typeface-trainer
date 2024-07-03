@@ -5,7 +5,6 @@
 /* Font One */
 #font-one {
     font-family: Outfit;
-    font-size: 16px;
 }
 /* Font Two */
 #font-two {
@@ -66,8 +65,4 @@ hr {
 #displays {
     height: 20rem;
     overflow: hidden;
-}
-
-#controls {
-    
 }
