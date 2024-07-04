@@ -9,7 +9,7 @@ const fontOneSize = document.querySelector('input#font-one-size')
 const fontOneSizeDisplay = document.querySelector('p#font-one-size-display')
 fontOneSize.addEventListener('input', (e) => {
     fontOneDisplay.style = `font-size: ${e.target.value}rem`
-    fontOneSizeDisplay.textContent = `${e.target.value}%`
+    fontOneSizeDisplay.textContent = `${e.target.value}rem`
 })
 const fontOneLineHeight = document.querySelector('input#font-one-line-height')
 const fontOneLineHeightDisplay = document.querySelector('p#font-one-line-height-display')
@@ -21,7 +21,7 @@ const fontOneKerning = document.querySelector('input#font-one-kerning')
 const fontOneKerningDispay = document.querySelector('p#font-one-kerning-display')
 fontOneKerning.addEventListener('input', (e) => {
     fontOneDisplay.style = `letter-spacing: ${e.target.value}ch`
-    fontOneKerningDispay.textContent = `1${(e.target.value).slice(2)}%`
+    fontOneKerningDispay.textContent = `${e.target.value}ch`
 })
 
 // Font Two
@@ -35,7 +35,7 @@ const fontTwoSize = document.querySelector('input#font-two-size')
 const fontTwoSizeDisplay = document.querySelector('p#font-two-size-display')
 fontTwoSize.addEventListener('input', (e) => {
     fontTwoDisplay.style = `font-size: ${e.target.value}rem`
-    fontTwoSizeDisplay.textContent = `${e.target.value}%`
+    fontTwoSizeDisplay.textContent = `${e.target.value}rem`
 })
 const fontTwoLineHeight = document.querySelector('input#font-two-line-height')
 const fontTwoLineHeightDisplay = document.querySelector('p#font-two-line-height-display')
@@ -47,5 +47,5 @@ const fontTwoKerning = document.querySelector('input#font-two-kerning')
 const fontTwoKerningDispay = document.querySelector('p#font-two-kerning-display')
 fontTwoKerning.addEventListener('input', (e) => {
     fontTwoDisplay.style = `letter-spacing: ${e.target.value}ch`
-    fontTwoKerningDispay.textContent = `1${(e.target.value).slice(2)}%`
+    fontTwoKerningDispay.textContent = `${e.target.value}ch`
 })

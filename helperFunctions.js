@@ -8,12 +8,12 @@ function setDefaultText() {
 function initialiseControlDisplays() {
     // Font One
     fontOneWeightDisplay.textContent = "400"
-    fontOneSizeDisplay.textContent = "100%"
+    fontOneSizeDisplay.textContent = "1rem"
     fontOneLineHeightDisplay.textContent = "125%"
-    fontOneKerningDispay.textContent = "100%"
+    fontOneKerningDispay.textContent = "0ch"
     // Font Two
     fontTwoWeightDisplay.textContent = "400"
-    fontTwoSizeDisplay.textContent = "100%"
+    fontTwoSizeDisplay.textContent = "1rem"
     fontTwoLineHeightDisplay.textContent = "125%"
-    fontTwoKerningDispay.textContent = "100%"
+    fontTwoKerningDispay.textContent = "0ch"
 }
