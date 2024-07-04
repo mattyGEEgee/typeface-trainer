@@ -3,11 +3,11 @@
 /* Font Two */
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 /* Font One */
-#font-one {
+#displays #font-one {
     font-family: Outfit;
 }
 /* Font Two */
-#font-two {
+#displays #font-two {
     font-family: Commissioner;
 }
 
@@ -15,21 +15,25 @@
 
 body {
     margin: 0;
-    padding: 2ch 0;
+    padding-bottom: 2ch;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #app {
     /* width: 550px; */
-    width: 68ch;
+    width: 66ch;
     margin: 0 auto
 }
 
 label {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    gap: 0.5rem;
-    text-align: center;
+    gap: 0.25rem;
+}
+
+#controls label {
+    margin-top: 2rem
 }
 
 hr {
