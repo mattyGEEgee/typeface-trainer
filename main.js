@@ -7,6 +7,21 @@ const customInputReset = document.querySelector('input#reset-default-text') // u
 setDefaultText()
 initialiseControlDisplays()
 
+const fontOneGFontSrc = document.querySelector('input#font-one-gfont-source')
+const addFontOneGFontSrc = document.querySelector('input#font-one-gfont-add')
+addFontOneGFontSrc.addEventListener('click', (e) => {
+    addGFontScriptTag(fontOneGFontSrc)
+    fontOneDisplay.style.fontFamily = getGFontName(fontOneGFontSrc)
+    // https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap
+})
+const fontTwoGFontSrc = document.querySelector('input#font-two-gfont-source')
+const addFontTwoGFontSrc = document.querySelector('input#font-two-gfont-add')
+addFontTwoGFontSrc.addEventListener('click', (e) => {
+    addGFontScriptTag(fontTwoGFontSrc)
+    fontTwoDisplay.style.fontFamily = getGFontName(fontTwoGFontSrc)
+    // https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap
+})
+
 customInput.addEventListener('input', (e) => {
     if (customInputReset.checked) {
         customInputReset.checked = false

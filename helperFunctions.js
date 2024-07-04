@@ -17,3 +17,18 @@ function initialiseControlDisplays() {
     fontTwoLineHeightDisplay.textContent = "125%"
     fontTwoKerningDispay.textContent = "0ch"
 }
+
+function addGFontScriptTag(GFontSrc) {
+    GFontSrc = GFontSrc.value
+    let gFontStyleTag = document.createElement('style')
+    gFontStyleTag.textContent =`@import url('${GFontSrc}')`
+    document.head.insertAdjacentElement("afterbegin", gFontStyleTag)
+}
+function getGFontName(GFontSrc) {
+    GFontSrc = GFontSrc.value
+    const startIndex = GFontSrc.search(/family/)
+    let GFontName = GFontSrc.slice(startIndex + 7)
+    GFontName = GFontName.match(/^\w*[\+]?\w*[\+]?\w*[\+]?\w*[\+]?\w*/)[0]
+    GFontName = GFontName.replaceAll('+', ' ')
+    return GFontName
+}
